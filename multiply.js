@@ -1,10 +1,10 @@
 function multiply(){
-var num1 = document.getELementById("firstno").value
+var num1 = document.getElementById("firstno").value;
 
-var num2 = document.getElementById("secondno").value
+var num2 = document.getElementById("secondno").value;
 
-var result = num1 * num2
+var result = parseInt(num1) * parseInt(num2);
 
-document.getElementById("result").value=result
-
+document.getElementById("result").value=result;
+console.log("The result is", result);
 }
