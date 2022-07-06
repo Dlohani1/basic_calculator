@@ -11,9 +11,33 @@
  Enter second number : <input type="text" id="secondno" /> <br/> <br/>
  Result : <input type="text" id="result" /> <br/><br/>
 
- <button onclick="add()"> ADD </button>
- <button> Subtract </button>
- <button> Multiplication </button>
- <button> Division </button>
+ <button onclick="test(1)"> ADD </button>
+ <button onclick="test(2)"> Subtract </button>
+ <button onclick="test(3)"> Multiplication </button>
+ <button onclick="test(4)"> Division </button>
+
+<script>
+
+function test(no) {
+
+var firstNo = document.getElementById("firstno").value
+var secondNo = document.getElementById("secondno").value
+result = 0
+
+if ( no == 1 ) {
+result = parseInt(firstNo) + parseInt(secondNo)
+} else if ( no == 2 ) {
+result = firstNo - secondNo
+} else if ( no == 3 ) {
+result = firstNo * secondNo
+} else if ( no == 4 ) {
+result = firstNo/secondNo
+}
+
+document.getElementById("result").value = result
+
+}
+
+</script>
 
 </body>
